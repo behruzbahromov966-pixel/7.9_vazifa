@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Education Platform
+        {% endblock title %}
+    </title>
+
+    {% include 'layout/_styles.html' %}
+
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+    {% include 'components/navbar.html' %}
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        {% block content %}
+        {% endblock content%}
+    </div>
+
+    {% include 'components/footer.html' %}
+
+    {% include 'layout/_scripts.html' %}
+
+</body>
+</html>
